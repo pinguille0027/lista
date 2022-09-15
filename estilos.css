@@ -1,6 +1,6 @@
 :root {
-    --primary: #A5C882;
-    --secondary: #D33F49;
+    --primary: #7fc1ec;
+    --secondary: #a4d49a;
     --light: #fff;
     --dark: #000;
     --diabled: #e7e7e7;
@@ -42,22 +42,11 @@ input {
     background-color: var(--diabled);
 }
 
-input:focus {
-    outline: none;
-}
-
-.addTaskButton,
-.orderButton {
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .addTaskButton {
     height: 35px;
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--diabled);
+    background-color: var(--secondary);
 }
 
 .task {
@@ -66,10 +55,4 @@ input:focus {
     margin-top: 15px;
     color: var(--light);
     cursor: pointer;
-}
-
-.done {
-    background-color: var(--diabled);
-    text-decoration: line-through;
-    color: var(--dark);
 }

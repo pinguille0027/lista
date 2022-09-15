@@ -6,19 +6,11 @@ const addNewTask = event => {
     if(!value) return;
     const task = document.createElement('div');
     task.classList.add('task', 'roundBorder');
-    task.addEventListener('click', changeTaskState)
+    task.addEventListener('click', DeleteTask)
     task.textContent = value;
     tasksContainer.prepend(task);
     event.target.reset();
 };
-
-const changeTaskState = event => {
-    event.target.classList.toggle('done');
+const DeleteTask = event => {
+    event.target.classList.remove('task');
 };
-
-
-const renderOrderedTasks = () => {
-    order().forEach(el => tasksContainer.appendChild(el))
-}
-
-setDate();
