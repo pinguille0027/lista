@@ -12,5 +12,5 @@ const addNewTask = event => {
     event.target.reset();
 };
 const DeleteTask = event => {
-    event.target.classList.remove('task');
+    event.target.parentNode.remove('task');
 };
