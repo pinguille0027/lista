@@ -9,8 +9,9 @@ const addNewTask = event => {
     task.addEventListener('click', DeleteTask)
     task.textContent = value;
     tasksContainer.prepend(task);
+    event.target.reset();
 };
 const DeleteTask = event => {
     event.target.remove('task');
-    event.target.reset();
+
 };
